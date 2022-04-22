@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DELICIOUS CAFE</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noticia+Text&family=Noto+Serif&family=Oswald:wght@300;400;500&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noticia+Text&family=Noto+Serif&family=Oswald:wght@200&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Karla:wght@300;400&family=Noticia+Text&family=Noto+Serif&family=Oswald:wght@200&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+
+	<style>
+		* {margin:0; padding: 0; box-sizing: border-box;}
+		ul,ol,li {list-style: none;}
+
+
+/*--------------------------------------------------------------상단-----------------------------------------------------------*/
+#top {width: 1260px; height: 940px; margin: 0 auto 30px; position:relative;}
+
+#topbox {width: 1260px; height: 50px; margin: 40px 0px;}
+/*--------------------------------------------------------------상단 끝--------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------슬라이더----------------------------------------------------------------*/
+#slider {width:100%; height: 955px; z-index: 1; position:absolute; background-color: #fff; overflow: hidden; padding: 13px;}
+#slider img {width: 100%; height: 100%; margin: 0; padding: 12px;}
+/*-----------------------------------------------------------슬라이더 끝---------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------배경 이미지 안에 글씨-----------------------------------------------------*/
+/*배경 이미지 지정*/
+.imgbox {width: 100%; height: 1000px; background-size: cover; padding: 5px;  background-image: url('img/bg1-1.jpg'); background-repeat: repeat; background-attachment: fixed;}
+
+/*배경 이미지 중간에 글씨 지정*/
+#bgtextbox {text-align: center; padding:0; width:1000px; height: 390px; color:#fff; margin: 215px auto;}
+#bgt1 {font-family: 'Great Vibes', cursive; display: block; font-size: 55px; color: #E0A25F;}
+#bgt2 {font-family: 'Oswald', sans-serif; display: block; font-size: 75px; margin: -25px 0 20px 0px; font-weight: bold;}
+#bgt3 {font-family: 'Karla', sans-serif; display: block; font-size: 16px; margin: 30px 0px;}
+
+/*글씨 중간에 수평선*/
+#hrcolor {border: 1px solid #E0A25F; width: 75px; margin: 1px auto 0px;}
+
+/*글씨 아래에 버튼 2개*/
+#bgtextbox #tbutton1:hover {background-color: #212c40; transition: 0.5s;}
+#bgtextbox #tbutton2:hover {background-color: #fff; transition: 0.5s;}
+
+#bgtextbox #tbutton1 {display: inline; background-color: #E0A25F; color: #fff; font-family: 'Karla', sans-serif; padding: 16px 30px; margin: 30px 7px; border-radius: 35px; border: 0; font-size: 15px;}
+#bgtextbox #tbutton2 {display: inline; color: #fff; font-family: 'Karla', sans-serif; padding: 16px 30px; margin: 30px 7px; border-radius: 35px; border: 1px solid #fff; font-size: 15px; background: transparent;}
+
+/*아이콘 바*/
+#icons {width: 1260px; height: 40px; margin: -20px auto 0px;}
+
+/*sns 아이콘 3개*/
+#iconbox1 {width: 146px; height: 40px; float: right;}
+#iconbox1 .icon1 {width: 40px; height: 40px; display: inline-block; border: 1px solid #fff; border-radius: 3px; margin: 0 3px;}
+#iconbox1 .icon1 img {width: 16px; height: 16px; margin: 11px;}
+
+/*call 아이콘 + 전화번호*/
+#iconbox2 {width: 160px; height: 40px; float: left;}
+#iconbox2 .icon2 {width: 40px; height: 40px; display: inline-block; border-radius: 3px;}
+#iconbox2 .icon2 img {width: 16px; height: 16px; margin: 11px;}
+#iconbox2 span {font-family: 'Oswald', sans-serif; color: #fff; display: inline-block; width: 120px; float: right; margin: 7px 0px;}
+
+/*중앙 화살표*/
+#arrow {width: 70px; height: 33px; margin: -10px auto 0px;}
+#arrow img {width: 70px; height: 33px;}
+/*------------------------------------------------------배경 이미지 안에 글씨 끝-----------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------헤더-----------------------------------------------------------------*/
+header {width: 1260px; height: 942px; margin: 13px auto 0px; z-index: 3; position:absolute; font-family: 'Oswald', sans-serif;}
+
+/*로고*/
+#logo {font-size: 22px; float: left; height: 40px; margin: 2px 6px; color: #fff; font-weight: 500;}
+#logo1 {color: #E0A25F;}
+#logo2 {color: #fff;}
+#logo a {text-decoration: none;}
+
+
+/*네비게이션*/
+nav {width:478px; height:40px; float: right;}
+nav > ul {font-size:14px;}
+nav > ul > li {float:left; margin:10px 15px;}
+nav > ul > li > a {text-decoration:none; color:#fff; font-family: 'Oswald', sans-serif;}
+nav > ul > li > a:hover {text-decoration: underline; color: #E0A25F; transition: 0.5s;}
+
+.navcolor1 {color: #E0A25F;}
+
+nav button {background-color: #E0A25F; color: #fff; border: 0; border-radius: 40px; padding: 10px 24px; height: 40px; line-height: 20px; margin-left: 20px; font-size: 13px; font-family: 'Karla', sans-serif;}
+nav button:hover {background-color: #212c40; transition: 0.5s;}
+/*--------------------------------------------------------------헤더 끝---------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------섹션--------------------------------------------------------------------*/
+section {width: 100%; height: 8200px; margin: 0 auto;}
+
+/*섹션 제목*/
+section .h1 {font-family: 'Great Vibes', cursive; font-size: 38px; text-align: center; color: #E0A25F;}
+section .h2 {font-family: 'Oswald', sans-serif; text-align: center; font-size: 38px; color: #000; font-weight: 500; margin: 0 auto 20px;}
+section .h3 {font-family: 'Oswald', sans-serif; text-align: center; font-size: 38px; color: #fff; font-weight: 500; margin: 0 auto 20px;}
+
+/*섹션 글씨*/
+section p {font-family: 'Karla', sans-serif; font-size: 17px; color: #666;}
+
+/*글씨 중간에 수평선*/
+.shr {border: 1px solid #E0A25F; width: 75px; margin: 1px auto 0px;}
+
+/*메인 10개*/
+#main1 {width: 1260px; height: 655px; margin: 0 auto; padding: 100px 0px;}
+#main2 {width: 100%; height: 975px; margin: 0 auto; padding: 100px 0px; background-image: url('img/main2bg.jpg'); background-repeat: repeat; background-attachment: fixed;}
+#main3 {width: 100%; height: 305px; margin: 0 auto; background-image: url('img/main3bg.jpg'); background-repeat: repeat; background-attachment: fixed; overflow: hidden;}
+#main4 {width: 100%; height: 1530px; margin: 0 auto; background-image: url('img/main2bg.jpg'); background-repeat: repeat; background-attachment: fixed; overflow: hidden;}
+#main5 {width: 100%; height: 1010px; margin: 0 auto; padding: 100px 0px;}
+#main6 {width: 100%; height: 810px; margin: 0 auto; background-image: url('img/main2bg.jpg'); background-repeat: repeat; background-attachment: fixed; padding: 110px 0px; overflow: hidden;}
+#main7 {width: 100%; height: 517px; margin: 0 auto; background-image: url('img/main7bg.jpg'); background-repeat: repeat; background-attachment: fixed; padding: 90px 0px;}
+#main8 {width: 100%; height: 870px; margin: 0 auto; background-image: url('img/main2bg.jpg'); background-repeat: repeat; background-attachment: fixed; padding: 90px 0px; overflow: hidden;}
+#main9 {width: 100%; height: 760px; margin: 0 auto;}
+#main10 {width: 100%; height: 770px; margin: 0 auto; background-image: url('img/main2bg.jpg'); background-repeat: repeat; background-attachment: fixed;}
+
+/*메인1 관련 스타일*/
+#main1box1 {width: 1260px; height: 130px; margin: 65px auto 10px;}
+.main1tbox {width: 600px; height: 130px; display: inline-block; float: left; margin: 0 15px;}
+.main1tbox1 {width: 475px; height: 130px; float: right;}
+.main1tbox span a {color: #E0A25F;}
+.main1tbox span a:hover {color: #EE3F5A; text-decoration: line; transition: 0.5s;}
+
+#main1box2 {width: 174px; height: 70px; margin: 0 auto;}
+#main1box2 button {display: inline; background-color: #E0A25F; color: #fff; font-family: 'Karla', sans-serif; padding: 16px 30px; margin: 10px 7px; border-radius: 35px; border: 0; font-size: 15px;}
+#main1box2 button:hover {background-color: #212c40; transition: 0.5s;}
+
+
+/*메인2 관련 스타일*/
+#main2box1 {width: 1170px; height: 470px; margin: 60px auto 30px;}
+.main2tbox {width: 370px; height: 470px; float: left; margin: 0 10px;}
+
+.m2ib {width: 370px; height: 370px;}
+.m2ib img {width: 100%; height: 100%; float: left;}
+
+.m2tb {width: 370px; height: 100px; padding: 15px 0px;}
+.m2tb .h4 {display: inline; font-size: 16px; color: #000; font-family: 'Karla', sans-serif; font-weight: 600;}
+.m2tb .h6 {display: inline; font-size: 16px; color: #000; font-family: 'Karla', sans-serif;}
+.m2tb .p1 {display: inline; font-size: 13px; color: #777; font-family: 'Karla', sans-serif;}
+.m2tb .p2 {display: inline; font-size: 13px; color: #000; font-family: 'Karla', sans-serif;}
+
+#main2box2 {width: 180px; height: 70px; margin: 0 auto;}
+#main2box2 button {display: inline; background-color: #E0A25F; color: #fff; font-family: 'Karla', sans-serif; padding: 16px 30px; margin: 10px 7px; border-radius: 35px; border: 0; font-size: 15px;}
+#main2box2 button:hover {background-color: #212c40; transition: 0.5s;}
+
+
+/*메인3 관련 스타일*/
+#main3box1 {width: 275px; height: 120px; margin: 85px auto 0px;}
+#main3box1 img {margin: 10px auto; width: 64px; height: 64px; display: block;}
+
+
+/*메인4 관련 스타일*/
+#main4box1 {width: 1170px; height: 1530px; margin: 0 auto;}
+.m4ib {width: 1170px; height: 570px; margin: 130px auto 0px;}
+
+#m4ib1 {width: 800px; height: 570px; float: left;}
+#m4ib1 img {width: 100%; height: 100%;  float: left;}
+
+#m4ib2 {width: 800px; height: 570px; float: right;}
+#m4ib2 img {width: 100%; height: 100%; float: right;}
+
+.m4over {}
+
+
+/*메인5 관련 스타일*/
+
+
+/*메인6 관련 스타일*/
+#m6ib {width: 970px; height: 580px; margin: 0 auto;}
+#m6ib1 {width: 970px; height: 345px; margin: 0 auto; background-color: cyan; overflow: hidden;}
+#m6ib2 {width: 970px; height: 30px; margin: 0 auto; background-color: white;}
+#m6ib3 {width: 970px; height: 205px; margin: 0 auto; background-color: yellowgreen;}
+
+#m6ib1 img {float: left; width: 485px; height: 345px;}
+
+
+/*메인7 관련 스타일*/
+#main7box1 {width: 1260px; height: 130px; margin: 50px auto 0px;}
+.main7tbox {width: 600px; height: 130px; margin: 0 auto; text-align: center;}
+.m7p {color: #fff; margin: 5px 0px;}
+
+#main7box2 {width: 145px; height: 50px; margin: -40px auto 0px;}
+#main7box2 button {background-color: #E0A25F; color: #fff; font-family: 'Karla', sans-serif; padding: 16px 30px; border-radius: 35px; border: 0; font-size: 15px;}
+#main7box2 button:hover {background-color: #212c40; transition: 0.5s;}
+
+
+/*메인8 관련 스타일*/
+#main8box1 {width: 1000px; height: 637px; margin: 30px auto 0px;}
+#main8box1 img {width: 468px; height: 637px; float: left;}
+#m8tb {float: right; width: 468px; height: 637px;}
+#main8tbox1 {width: 468px; height: 300px; margin: 0 auto; text-align: left;}
+/*------------------------------------------------------------섹션 끝-----------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------푸터---------------------------------------------------------------------*/
+footer {width: 100%; height: 600px; margin: 0 auto; background-color: navy; background-image: url('img/main3bg.jpg'); background-repeat: repeat; background-attachment: fixed;}
+/*------------------------------------------------------------푸터 끝------------------------------------------------------------------*/
+
+
+</style>
+
+
+</head>
+
+<body>
+
+
+	<!--슬라이더-->
+	<div id="slider">
+		<div class="imgbox" style="background-image: url('img/bg1-1.jpg');"></div>
+	</div>
+
+
+
+	<!--상단 + 네비게이션 + 헤더-->
+	<div id="top">
+
+		<header>
+
+			<!--탑박스 시작-->
+			<div id="topbox">
+
+				<div id="logo">
+					<a href="index.html" target="_self"><span id="logo1">DELICIOUS</span> <span id="logo2">CAFÉ</span></a>
+				</div>
+
+				<nav>	
+					<ul>
+						<li class="navcolor1"><a href="#" target="_self">HOME</a></li>
+						<li class="navcolor2"><a href="#" target="_self">MENU ∨</a></li>
+						<li class="navcolor2"><a href="#" target="_self">BLOG</a></li>
+						<li class="navcolor2"><a href="#" target="_self">ABOUT</a></li>
+						<li class="navcolor2"><a href="#" target="_self">CONTACT</a></li>
+					</ul>
+					<button>Reservation</button>
+				</nav>
+
+			</div>
+			<!--탑박스 끝-->
+
+
+			<!--배경 이미지 안에 글씨 시작-->
+			<div id="bgtextbox">
+
+				<p><span id="bgt1">Welcome to</span><br><span id="bgt2">DELICIOUS CAFÉ</span></p>
+				<div id="hrcolor"></div>
+				<div id="hrcolor"></div>
+
+				<span id="bgt3">
+					<p>Fish is one of the most wholesome foods that man can eat. In fact, people have been eating fish<br>
+					throughout human history.</p>
+				</span>
+
+				<button id="tbutton1">Book a Table</button>
+				<button id="tbutton2">View Menus</button>
+
+			</div>
+			<!--배경 이미지 안에 글씨 끝-->
+
+
+			<!--아이콘 시작-->
+			<div id="icons">
+
+				<div id="iconbox1">
+
+					<div class="icon1">
+						<img src="img/twiter.png" alt="아이콘1">
+					</div>
+					<div class="icon1">
+						<img src="img/facebook.png" alt="아이콘2">
+					</div>
+					<div class="icon1">
+						<img src="img/instagram.png" alt="아이콘3">
+					</div>
+
+				</div>
+
+				<div id="iconbox2">
+					<div class="icon2">
+						<img src="img/call.png" alt="아이콘4">
+					</div>
+					<span>8 (800) 316-06-42</span>
+				</div>
+
+			</div>
+			<!--아이콘 끝-->
+
+			<!--중앙 화살표 시작-->
+			<div id="arrow">
+				<img src="img/arrow.png" alt="화살표">
+			</div>
+			<!--중앙 화살표 끝-->
+
+
+		</header>
+		<!--헤더 끝-->
+
+	</div>
+	<!--탑 끝-->
+
+
+
+
+	<!--섹션 / 메인 1-->
+	<section>
+		<div id="main1">
+
+			<p class="h1">Discover</p>
+			<p class="h2">NEW FLAVORS</p>
+			<div class="shr"></div>
+			<div class="shr"></div>
+
+			<div id="main1box1">
+				<div class="main1tbox">
+					<div class="main1tbox1">
+						<p>Fish is one of the most wholesome foods that man can eat.</p>
+						<p>In fact, people have been eating fish throughout human</p>
+						<p>history. These days, many cooks yearn to add fish to their</p>
+						<p>repertoire, but the whole process of cleaning and filleting</p>
+					</div>
+				</div>
+
+				<div class="main1tbox">
+					<p>fresh fish is a little scary to them. The process of cleaning</p>
+					<p>and filleting fresh fish is <span><a href="">relatively simple</a></span> once the steps are</p>
+					<p>understood. To begin, you must clean your fresh fish</p><p>properly in order to maintain it’s quality.</p>
+				</div>
+			</div>
+
+			<div id="main1box2">
+				<button>More About Us</button>
+			</div>
+		</div>
+
+
+
+
+		<!--섹션 / 메인 2-->
+		<div id="main2">
+
+			<p class="h1">Menu</p>
+			<p class="h2">SPECIAL DISHES</p>
+			<div class="shr"></div>
+			<div class="shr"></div>
+
+			<div id="main2box1">
+
+				<div class="main2tbox">
+
+					<div class="m2ib">
+						<img src="img/special1.jpg" alt="스페셜1">
+					</div>
+
+					<div class="m2tb">
+						<p class="h4">CHERRY BOMB</p>
+						<span>............................................................</span>
+						<p class="h6">$8.90</p>
+						<p class="p1">Dark Chocolate, Cherry, Mascarpone</p><br>
+						<p class="p2">190g. / 240cal.</p>
+					</div>
+
+				</div>
+
+
+				<div class="main2tbox">
+
+					<div class="m2ib">
+						<img src="img/special2.jpg" alt="스페셜2">
+					</div>
+
+					<div class="m2tb">
+						<p class="h4">ROASTED LAMB</p>
+						<span>..........................................................</span>
+						<p class="h6">$13.70</p>
+						<p class="p1">Boneless Lamb Leg, Garlic, Onion, Spices, Rosemary</p><br>
+						<p class="p2">280g. / 320cal.</p>
+					</div>
+
+				</div>
+
+
+				<div class="main2tbox">
+
+					<div class="m2ib">
+						<img src="img/special3.jpg" alt="스페셜3">
+					</div>
+
+					<div class="m2tb">
+						<p class="h4">ASIAN CHICKEN WRAP</p>
+						<span>.............................................</span>
+						<p class="h6">$9.99</p>
+						<p class="p1">Sliced Chicken, Broccoli Slaw, Mixed Greens, Wrap, Sesame Dressing</p><br>
+						<p class="p2">245g. / 186cal.</p>
+					</div>
+
+				</div>
+
+
+			</div>
+
+			<div id="main2box2">
+				<button>View Full Menu</button>
+			</div>
+
+		</div>
+
+		
+
+
+		<!--섹션 / 메인 3-->
+		<div id="main3">
+
+			<div id="main3box1">
+				<img src="img/main3icon.png" alt="메인3 아이콘">
+				<p class="h3">RESERVE A TABLE</p>
+			</div>
+
+		</div>
+
+
+
+
+
+		<!--섹션 / 메인 4-->
+		<div id="main4">
+
+			<div id="main4box1">
+
+				<div class="m4ib">
+
+					<div id="m4ib1">
+						<img src="img/main4img1.jpg" alt="메인4 이미지1">
+						<div class="m4over">
+						</div>
+					</div>
+				</div>
+
+				<div class="m4ib">
+					<div id="m4ib2">
+						<img src="img/main4img2.jpg" alt="메인4 이미지2">
+						<div class="m4over">
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+
+
+		<!--섹션 / 메인 5-->
+		<div id="main5">
+
+			<p class="h1">More Dishes</p>
+			<p class="h2">FROM OUR MENU</p>
+			<div class="shr"></div>
+			<div class="shr"></div>
+<!--
+			<div class="menut">
+
+				<table>
+					<tr>
+						<td><img src="img/menu1.jpg" alt="메뉴1"></td>
+						<td>GREEK AVOCADO TOAST.........................$7.00<br>
+							Toasted Bread, Avocado, Feta Cheese, Tomato, Olives, Spices<br>
+						180g. / 228cal.</td>
+					</tr>
+					<tr>
+						<td><img src="img/menu1.jpg" alt="메뉴1"></td>
+						<td>GREEK AVOCADO TOAST.........................$7.00<br>
+							Toasted Bread, Avocado, Feta Cheese, Tomato, Olives, Spices<br>
+						180g. / 228cal.</td>
+					</tr>
+					<tr>
+						<td><img src="img/menu1.jpg" alt="메뉴1"></td>
+						<td>GREEK AVOCADO TOAST.........................$7.00<br>
+							Toasted Bread, Avocado, Feta Cheese, Tomato, Olives, Spices<br>
+						180g. / 228cal.</td>
+					</tr>
+					<tr>
+						<td><img src="img/menu1.jpg" alt="메뉴1"></td>
+						<td>GREEK AVOCADO TOAST.........................$7.00<br>
+							Toasted Bread, Avocado, Feta Cheese, Tomato, Olives, Spices<br>
+						180g. / 228cal.</td>
+					</tr>
+				</table>
+				
+			</div>
+		-->
+
+	</div>
+
+
+
+
+
+
+	<!--섹션 / 메인 6-->
+	<div id="main6">
+
+		<div id="m6ib">
+
+			<div id="m6ib1">
+				<img src="img/main6img1.jpg" alt="메인6 이미지1">
+				<img src="img/main6img2.jpg" alt="메인6 이미지2">
+			</div>
+
+
+
+			<div id="m6ib2">
+
+			</div>
+
+			<div id="m6ib3">
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<!--섹션 / 메인 7-->
+	<div id="main7">
+
+		<p class="h1">Reservation</p>
+		<p class="h3">BOOK YOUR TABLE</p>
+		<div class="shr"></div>
+		<div class="shr"></div>
+
+		<div id="main7box1">
+
+			<div class="main7tbox">
+				<p class="m7p">Fish is one of the most wholesome foods that man can eat. In fact, people</p>
+				<p class="m7p">have been eating fish throughout human history.</p>
+			</div>
+		</div>
+
+		<div id="main7box2">
+			<button>Book a Table</button>
+		</div>
+
+	</div>
+
+
+
+
+
+	<!--섹션 / 메인 8-->
+	<div id="main8">
+		<div id="main8box1">
+			<img src="img/main8img1.jpg" alt="메인8 이미지1">
+
+			<div id="m8tb">
+
+				<p class="h1">Chief’s Word</p>
+				<p class="h2">MADE WITH LOVE</p>
+				<div class="shr"></div>
+				<div class="shr"></div>
+
+				<div class="main8tbox1">
+					<p class="p1">Fish is one of the most wholesome foods that man</p>
+					<p class="p1">can eat. In fact, people have been eating fish</p>
+					<p class="p1">throughout human history. These days, many cooks</p>
+					<p class="p1">yearn to add fish to their repertoire, but the whole</p>
+					<p class="p1">process of cleaning and filleting</p>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!--섹션 / 메인 9-->
+	<div id="main9">
+
+	</div>
+
+
+	<!--섹션 / 메인 10-->
+	<div id="main10">
+
+	</div>
+
+
+
+
+</section>
+
+
+
+
+
+<!--푸터-->
+<footer>
+
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>
